@@ -20,7 +20,7 @@ jobs:
       contents: write
 
     steps:
-      - name: Descargando c{odigo del repositorio 🛎️
+      - name: Descargando código del repositorio 🛎️
         uses: actions/checkout@master
         with:
           persist-credentials: false
@@ -29,7 +29,7 @@ jobs:
         run: npm install
 
 
-      - name: Creando la versi{on a publicar 🏗️
+      - name: Creando la versión a publicar 🏗️
         run: npm run build
         env:
           NODE_ENV: production
