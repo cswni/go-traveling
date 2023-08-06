@@ -10,7 +10,7 @@ type itemNavigationProps = {
 }
 
 export const ItemNavigation = (props: itemNavigationProps) => {
-    const { label, url, icon: Icon, isActive } = props;
+    const { label, url, icon: Icon } = props;
     const {pathname} = useLocation()
     
     
