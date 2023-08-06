@@ -15,7 +15,7 @@ export const Navigation = () => {
         <nav className="flex px-3 mt-4 sm:px-2">
             <ul className="grid gap-x-4 lg:gap-x-10 grid-cols-4 w-full justify-between text-center">
             {links.map(({ url, label, icon }) => (
-                <ItemNavigation key={url} url={url} label={label} icon={icon} isActive={true}  />
+                <ItemNavigation key={url} url={url} label={label} icon={icon} />
             ))
             }
             </ul>
