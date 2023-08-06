@@ -1,8 +1,9 @@
-name: "GH Pages deploy"
+name: "Despliegue de sitio web en Github Pages"
 on:
   push:
     branches:
       - main
+      - master
     paths-ignore:
       - "**.md"
 
@@ -19,21 +20,21 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout 🛎️
+      - name: Descargando c{odigo del repositorio 🛎️
         uses: actions/checkout@master
         with:
           persist-credentials: false
 
-      - name: Install 🔧
+      - name: Instalando dependencias 🔧
         run: npm install
 
 
-      - name: Build 🏗️
+      - name: Creando la versi{on a publicar 🏗️
         run: npm run build
         env:
           NODE_ENV: production
 
-      - name: Deploy to GH Pages 🚀
+      - name: Publicando en GH Pages 🚀
         if: ${{ github.event_name != 'pull_request' }}
         uses: peaceiris/actions-gh-pages@v3
         with:

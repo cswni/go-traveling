@@ -25,7 +25,7 @@ export const ItemNavigation = (props: itemNavigationProps) => {
             `}>
             <Icon size={40} />
         </span>
-       <span className="group-hover:font-bold">{ label } </span>
+       <span className="group-hover:font-bold">{ label }</span>
     </li>
         </Link>
   )

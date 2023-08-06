@@ -9,7 +9,7 @@ import { Transports } from "./pages/Transports";
 function App() {
   return (
     <>
-      <div className="container mx-auto max-w-2xl bg-white min-h-screen shadow-2xl shadow-slate-950">
+      <div className="container max-w-2xl min-h-screen pb-10 mx-auto bg-white shadow-2xl shadow-slate-950">
       <Header />
         <Navigation />
         <div className="px-3 mt-8 sm:px-2">

@@ -1,3 +1,5 @@
+import { Title } from "../components/Title"
+
 export const Hotels = () => {
   let hotels = [
     {
@@ -26,19 +28,19 @@ export const Hotels = () => {
   ]
   return (
     <div >
-       <h1 className="text-lg font-semibold">Busca un hotel cerca de ti</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+       <Title texto="Busca un hotel cerca de ti" />
+        <div className="grid grid-cols-1 gap-4 mt-4 sm:grid-cols-2">
           {hotels.map((hotel) => (
-            <div className="bg-white shadow-md rounded-lg overflow-hidden hover:cursor-pointer">
-              <img src={hotel.image} alt={hotel.name} className="w-full h-56 object-cover object-center" />
+            <div className="overflow-hidden bg-white rounded-lg shadow-md hover:cursor-pointer">
+              <img src={hotel.image} alt={hotel.name} className="object-cover object-center w-full h-56" />
               <div className="py-4">
-                <h3 className="text-gray-500 text-xs flex justify-between tracking-widest title-font mb-1">{hotel.name}
+                <h3 className="flex justify-between mb-1 text-xs tracking-widest text-gray-500 title-font">{hotel.name}
                 <span>{hotel.starring} estrellas</span>
                 </h3>
                 <p className="mt-1">${hotel.price}</p>
                 <div className="flex items-center">
                   
-                  <span className="text-gray-400 flex items-center leading-none text-sm pr-3 py-1">
+                  <span className="flex items-center py-1 pr-3 text-sm leading-none text-gray-400">
                     
                   </span>
                   </div>

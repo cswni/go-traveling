@@ -1,7 +1,9 @@
+import { Title } from "../components/Title"
+
 export const Transports = () => {
   return (
     <div>
-      <h1 className="text-lg font-semibold">Elige el transporte local</h1>
+      <Title texto="Elige el transporte local" />      
     </div>
   )
 }
