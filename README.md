@@ -27,9 +27,9 @@
 * El examen es individual.
 * Usar la api compartida
 
-* [https://api-tests-workingpos.com/api/go-traveling/hotels](https://api-tests-workingpos.com/api/go-traveling/hotels)
-* [https://api-tests-workingpos.com/api/go-traveling/foods](https://api-tests-workingpos.com/api/go-traveling/foods)
-* [https://api-tests-workingpos.com/api/go-traveling/flights](https://api-tests-workingpos.com/api/go-traveling/flights)
+* [https://api-tests.workingpos.com/api/go-traveling/hotels](https://api-tests.workingpos.com/api/go-traveling/hotels)
+* [https://api-tests.workingpos.com/api/go-traveling/foods](https://api-tests.workingpos.com/api/go-traveling/foods)
+* [https://api-tests.workingpos.com/api/go-traveling/flights](https://api-tests.workingpos.com/api/go-traveling/flights)
 
 * En la ruta /flighs se debe mostrar la lista de vuelos usando fetch y useEffect
 
